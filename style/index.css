@@ -13,8 +13,9 @@ footer {
 .featured {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     padding: 20px;
+
 }
 
 .journey {
@@ -23,7 +24,7 @@ footer {
 
 .portfolioRow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
