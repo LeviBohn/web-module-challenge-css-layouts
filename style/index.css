@@ -30,6 +30,15 @@ footer {
 
 .folder {
     text-align: center;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
 }
 
 button {
@@ -48,4 +57,60 @@ button:hover {
 button a {
     text-decoration: none;
     color: inherit;
+}
+
+@media(max-width: 800px) {
+    .folder {
+        width: 20%;
+    }
+
+    .featured img {
+        width: 40%;
+    }
+    .journey {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;        
+    }
+    
+    button {
+        width: 40%;
+        margin: 1% 0;
+    }
+
+    .featured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolioRow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .portfolioRow div {
+        width: 40%;
+        margin: 4% 0;
+    }
 }
